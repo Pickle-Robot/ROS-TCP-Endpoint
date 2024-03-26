@@ -11,3 +11,4 @@ catkin_python_setup()
 catkin_package(CATKIN_DEPENDS message_runtime)
 
 install(DIRECTORY launch/ DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch)
+catkin_install_python(PROGRAMS src/ros_tcp_endpoint/default_server_endpoint.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
